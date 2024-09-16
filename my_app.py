@@ -8,7 +8,7 @@ def print_separator():
 
 def main_menu():
     print_separator()
-    print("Welcome to the Job Application Tracker CLI!")
+    print("Welcome to the Job Application Manager CLI!")
     print_separator()
     while True:
         print("Main Menu:")

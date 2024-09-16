@@ -1,6 +1,6 @@
-## 📝 Job Application Tracker CLI
+## 📝 Job Application Manager CLI
 Overview
-    The Job Application Tracker CLI is a command-line application designed to help you efficiently manage your job applications. Applying to many jobs can get overwhelming, but with this system, you can easily track the companies you've applied to, the positions you're targeting, and the current status of each application (e.g., interview, callback, or rejected).
+    The Job Application Manager CLI is a command-line application designed to help you efficiently manage your job applications. Applying to many jobs can get overwhelming, but with this system, you can easily track the companies you've applied to, the positions you're targeting, and the current status of each application (e.g., interview, callback, or rejected).
 
 ## Problem Statement
     Applying for multiple jobs can become difficult to track manually. You might lose track of which company called you back, which application led to an interview, or which ones were rejected. This CLI tool helps you organize and manage all your job applications by providing a simple and efficient way to add, update, list, and delete applications, all while staying organized.
@@ -16,11 +16,11 @@ Overview
     Clone this repository to your local machine:
 
     **bash**
-    git clone https://github.com/your-username/job-app-tracker.git
+    git clone https://github.com/your-username/job_app_manager.git
     Navigate into the project directory:
 
     **bash**
-    cd job-app-tracker
+    cd job-app-manager
     Set up the virtual environment using pipenv:
 
     **bash**

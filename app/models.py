@@ -23,37 +23,3 @@ class JobApplication(Base):
     company_id = Column(Integer, ForeignKey('companies.id'))
     company = relationship('Company', back_populates='job_applications')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# from sqlalchemy import Column, Integer, String, ForeignKey
-# from sqlalchemy.orm import relationship
-# from app.database import Base
-
-# class Company(Base):
-#     __tablename__ = 'companies'
-
-#     id = Column(Integer, primary_key=True)
-#     name = Column(String, nullable=False)
-#     jobapplications = relationship("JobApplication", back_populates="company")
-
-# class JobApplication(Base):
-#     __tablename__ = 'job_applications'
-
-#     id = Column(Integer, primary_key=True)
-#     position = Column(String, nullable=False)
-#     status = Column(String, default="Applied")
-#     company_id = Column(Integer, ForeignKey('companies.id'))
-#     company = relationship("Company", back_populates="applications")

@@ -17,7 +17,7 @@ def list_applications():
     session = Session()
     applications = session.query(JobApplication).all()
     for app in applications:
-        print(f"ID: {app.id}, Company: {app.company.name}, Position: {app.position}")
+        print(f"ID: {app.id}, Company: {app.company.name}, Position: {app.position}, Status: {app.status}")
     session.close()
 
 def update_application(app_id, status):
@@ -53,86 +53,3 @@ def delete_application(app_id):
 
     session.close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# from app import Session, Company, JobApplication
-
-# def add_application(company_name, position):
-#     session = Session()
-#     company = session.query(Company).filter_by(name=company_name).first()
-    
-#     if not company:
-#         company = Company(name=company_name)
-#         session.add(company)
-    
-#     new_application = JobApplication(position=position, company=company)
-#     session.add(new_application)
-#     session.commit()
-#     session.close()
-
-# def list_applications():
-#     session = Session()
-#     applications = session.query(JobApplication).all()
-    
-#     for app in applications:
-#         print(f"ID: {app.id} | Company: {app.company.name} | Position: {app.position} | Status: {app.status}")
-    
-#     session.close()
-
-# def update_application(app_id, new_status):
-#     session = Session()
-#     application = session.query(JobApplication).filter_by(id=app_id).first()
-    
-#     if application:
-#         application.status = new_status
-#         session.commit()
-#         print(f"Application ID {app_id} status updated to {new_status}.")
-#     else:
-#         print("Application not found.")
-    
-#     session.close()
-
-# def delete_application(app_id):
-#     session = Session()
-#     application = session.query(JobApplication).filter_by(id=app_id).first()
-    
-#     if application:
-#         session.delete(application)
-#         session.commit()
-#         print(f"Application ID {app_id} deleted.")
-#     else:
-#         print("Application not found.")
-    
-#     session.close()
